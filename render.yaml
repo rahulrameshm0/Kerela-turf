@@ -1,0 +1,63 @@
+# Render Blueprint for TurfKerala: one Node web service running the API and serving the built frontend.
+# Values marked `sync: false` are entered in the Render dashboard when the Blueprint is created; never commit them.
+services:
+  - type: web
+    name: kerala-turf
+    runtime: node
+    plan: free
+    branch: main
+    buildCommand: npm ci && npm run build
+    startCommand: npm start
+    healthCheckPath: /api/config
+    envVars:
+      - key: NODE_VERSION
+        value: "22"
+      # server.mjs binds to 127.0.0.1 by default; Render needs every interface.
+      - key: HOST
+        value: 0.0.0.0
+      # Must exactly match the public URL, e.g. https://kerala-turf.onrender.com (no trailing slash).
+      - key: APP_ORIGIN
+        sync: false
+      - key: BUSINESS_NAME
+        value: TurfKerala
+      - key: LAUNCH_MODE
+        value: private
+      - key: ENABLE_PHONE_AUTH
+        value: "false"
+      - key: ALLOW_LIVE_PAYMENTS
+        value: "false"
+      # Upload the Firebase Admin service-account JSON as a Secret File named service-account.json.
+      - key: GOOGLE_APPLICATION_CREDENTIALS
+        value: /etc/secrets/service-account.json
+      - key: FIREBASE_API_KEY
+        sync: false
+      - key: FIREBASE_AUTH_DOMAIN
+        sync: false
+      - key: FIREBASE_PROJECT_ID
+        sync: false
+      - key: FIREBASE_APP_ID
+        sync: false
+      - key: FIREBASE_STORAGE_BUCKET
+        sync: false
+      - key: FIREBASE_MESSAGING_SENDER_ID
+        sync: false
+      - key: FIREBASE_MEASUREMENT_ID
+        sync: false
+      - key: ADMIN_UIDS
+        sync: false
+      - key: ADMIN_CONTACT_PHONE
+        sync: false
+      - key: BUSINESS_LEGAL_NAME
+        sync: false
+      - key: REFUND_POLICY_TEXT
+        sync: false
+      - key: RAZORPAY_KEY_ID
+        sync: false
+      - key: RAZORPAY_KEY_SECRET
+        sync: false
+      - key: RAZORPAY_WEBHOOK_SECRET
+        sync: false
+      - key: GOOGLE_MAPS_API_KEY
+        sync: false
+      - key: JOBS_SECRET
+        generateValue: true
