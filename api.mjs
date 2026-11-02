@@ -91,7 +91,10 @@ export function createServer(
                 ? "text/css; charset=utf-8"
                 : "text/html; charset=utf-8",
         );
-        res.setHeader("Cache-Control", media ? "public, max-age=604800" : "no-cache");
+        res.setHeader(
+          "Cache-Control",
+          media ? "public, max-age=604800" : "no-cache",
+        );
         res.end(method === "HEAD" ? undefined : body);
         return;
       }
@@ -354,15 +357,24 @@ export function createServer(
             const turf = await tx.get("turfs", id);
             const image = await tx.get("images", imageId);
             assert(turf, 404, "NOT_FOUND", "Turf not found.");
-            assert(image && !image.deleted && image.turfId === id, 400,
-              "INVALID_IMAGE", "Choose a photo belonging to this turf.");
-            tx.set("turfs", id, { ...turf, coverImageId: imageId, updatedAt: Date.now() });
+            assert(
+              image && !image.deleted && image.turfId === id,
+              400,
+              "INVALID_IMAGE",
+              "Choose a photo belonging to this turf.",
+            );
+            tx.set("turfs", id, {
+              ...turf,
+              coverImageId: imageId,
+              updatedAt: Date.now(),
+            });
           });
           return send(200, { coverImageId: imageId });
         }
         if (method === "GET" && parts[4] === "photos")
           return send(200, {
-            coverImageId: (await services.store.get("turfs", id))?.coverImageId || null,
+            coverImageId:
+              (await services.store.get("turfs", id))?.coverImageId || null,
             photos: (
               await services.store.list("images", [["turfId", "==", id]])
             ).filter((p) => !p.deleted),
@@ -401,13 +413,11 @@ export function createServer(
           );
           const imageId = randomUUID(),
             objectPath = `turfs/${id}/${imageId}`;
-          await services.bucket
-            .file(objectPath)
-            .save(bytes, {
-              resumable: false,
-              contentType: type,
-              metadata: { cacheControl: "private, no-store" },
-            });
+          await services.bucket.file(objectPath).save(bytes, {
+            resumable: false,
+            contentType: type,
+            metadata: { cacheControl: "private, no-store" },
+          });
           const image = {
             id: imageId,
             turfId: id,
@@ -417,14 +427,19 @@ export function createServer(
             createdAt: Date.now(),
             deleted: false,
           };
-          try { await services.store.transaction(async (tx) => {
-            const current = await tx.get("turfs", id);
-            assert(current, 404, "NOT_FOUND", "Turf not found.");
-            tx.set("images", imageId, image);
-            if (!current.coverImageId)
-              tx.set("turfs", id, { ...current, coverImageId: imageId });
-          }); } catch (error) {
-            await services.bucket.file(objectPath).delete({ ignoreNotFound: true }).catch(() => {});
+          try {
+            await services.store.transaction(async (tx) => {
+              const current = await tx.get("turfs", id);
+              assert(current, 404, "NOT_FOUND", "Turf not found.");
+              tx.set("images", imageId, image);
+              if (!current.coverImageId)
+                tx.set("turfs", id, { ...current, coverImageId: imageId });
+            });
+          } catch (error) {
+            await services.bucket
+              .file(objectPath)
+              .delete({ ignoreNotFound: true })
+              .catch(() => {});
             throw error;
           }
           return send(201, { image });

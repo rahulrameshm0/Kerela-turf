@@ -68,7 +68,21 @@ export function pageEnter() {
 
 // Reveal cards and sections as they scroll into view, staggering siblings.
 const revealable =
-  ".turf-card, .booking-row, .detail-section, .story-tile, .story-copy, .contact-band, .stat, .empty-state, .photo-gallery, .form-section, .checkout-info";
+  ".turf-card, .booking-row, .detail-section, .story-tile, .story-copy, .contact-band, .stat, .empty-state, .photo-gallery, .form-section, .checkout-info, .grounds-teaser, .ground-card, .grounds-note, .hero-map";
+
+// Count numbers up from zero the first time they are revealed.
+function countUp(root) {
+  root.querySelectorAll("[data-count]").forEach((el) => {
+    const end = Number(el.dataset.count), start = performance.now();
+    delete el.dataset.count;
+    const step = (now) => {
+      const t = Math.min(1, (now - start) / 1400);
+      el.textContent = Math.round(end * (1 - Math.pow(1 - t, 4)));
+      if (t < 1) requestAnimationFrame(step);
+    };
+    requestAnimationFrame(step);
+  });
+}
 const observer =
   "IntersectionObserver" in window
     ? new IntersectionObserver(
@@ -76,6 +90,7 @@ const observer =
           entries.forEach((e) => {
             if (!e.isIntersecting) return;
             e.target.classList.add("in");
+            countUp(e.target);
             observer.unobserve(e.target);
           }),
         { rootMargin: "0px 0px -8% 0px", threshold: 0.08 },
@@ -85,6 +100,7 @@ function watch(root) {
   if (!observer || calm()) return;
   const found = root.matches?.(revealable) ? [root] : [];
   found.push(...root.querySelectorAll(revealable));
+  if (root.matches?.(".grounds-hero") || root.querySelector?.(".grounds-hero")) countUp(root);
   for (const el of found) {
     if (el.classList.contains("reveal")) continue;
     const siblings = [...el.parentElement.children].filter((x) => x.matches(revealable));

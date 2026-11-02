@@ -32,6 +32,7 @@ import {
 } from "./ui.js";
 import { renderAdmin } from "./admin.js";
 import { PHOTOS, credit, ball, pageEnter, heroSlides, initMotion } from "./motion.js";
+import { GROUNDS, districtCount, keralaMap, groundsTeaser, groundsFallback, renderGrounds } from "./grounds.js";
 const state = {
   config: null,
   user: null,
@@ -93,11 +94,11 @@ function brand() {
 function shell() {
   const p = location.pathname;
   $("#header").innerHTML =
-    `<div class="header-inner">${brand()}<nav class="nav" aria-label="Main navigation"><a class="${p === "/" || p.startsWith("/turfs/") ? "active" : ""}" href="/">Find a turf</a><a class="${p === "/bookings" ? "active" : ""}" href="/bookings">My bookings</a>${state.user?.role === "admin" ? `<a class="${p.startsWith("/admin") ? "active" : ""}" href="/admin">Admin</a>` : ""}</nav><div class="header-actions"><span class="header-location">${icon("map-pin")}Kerala, India</span><button id="theme-button" class="icon-button" title="Switch theme" aria-label="Switch theme">${icon(document.documentElement.dataset.theme === "dark" ? "sun" : "moon")}</button><a class="outline" href="${state.user ? "/profile" : "/login"}">${icon("user-round")}${state.user ? esc(state.user.name.split(" ")[0] || "Profile") : "Sign in"}</a></div></div>`;
+    `<div class="header-inner">${brand()}<nav class="nav" aria-label="Main navigation"><a class="${p === "/" || p.startsWith("/turfs/") ? "active" : ""}" href="/">Find a turf</a><a class="${p === "/grounds" ? "active" : ""}" href="/grounds">Grounds map</a><a class="${p === "/bookings" ? "active" : ""}" href="/bookings">My bookings</a>${state.user?.role === "admin" ? `<a class="${p.startsWith("/admin") ? "active" : ""}" href="/admin">Admin</a>` : ""}</nav><div class="header-actions"><span class="header-location">${icon("map-pin")}Kerala, India</span><button id="theme-button" class="icon-button" title="Switch theme" aria-label="Switch theme">${icon(document.documentElement.dataset.theme === "dark" ? "sun" : "moon")}</button><a class="outline" href="${state.user ? "/profile" : "/login"}">${icon("user-round")}${state.user ? esc(state.user.name.split(" ")[0] || "Profile") : "Sign in"}</a></div></div>`;
   $("#theme-button").onclick = () =>
     theme(document.documentElement.dataset.theme === "dark" ? "light" : "dark");
   $("#footer").innerHTML =
-    `${brand()}<span>Made for the love of the game. Photographs of Malappuram by Wikimedia Commons contributors.</span><div class="footer-links"><a href="/contact">Contact</a><a href="/policy">Cancellation & refunds</a><span>Kerala, India</span></div>`;
+    `${brand()}<span>Made for the love of the game. Photographs of Malappuram by Wikimedia Commons contributors.</span><div class="footer-links"><a href="/grounds">Grounds map</a><a href="/contact">Contact</a><a href="/policy">Cancellation & refunds</a><span>Kerala, India</span></div>`;
   icons();
 }
 export function navigate(path) {
@@ -185,6 +186,7 @@ async function route() {
   try {
     if (path === "/") return await discovery(version);
     if (path === "/login") return login();
+    if (path === "/grounds") return renderGrounds();
     if (path === "/login/phone") return phoneLogin();
     if (path.startsWith("/turfs/"))
       return await turfDetail(path.split("/")[2], version);
@@ -242,7 +244,7 @@ async function route() {
 async function discovery(version) {
   const s = state.search;
   $("#main").innerHTML =
-    `<section class="intro" aria-label="Football in Malappuram"><div class="hero-slides" aria-hidden="true">${HERO.map((k, i) => `<img class="hero-slide${i ? "" : " active"}" data-photo="${k}" src="/media/${PHOTOS[k].file}" alt="" ${i ? 'loading="lazy"' : 'fetchpriority="high"'}>`).join("")}</div><div class="floodlight" aria-hidden="true"></div>${pitchLines}<span class="hero-ghost" lang="ml" aria-hidden="true">കളി</span><div class="intro-content"><div class="hero-location">${icon("map-pin")}From Malappuram, Kerala’s football heartland</div><h1><span class="line"><span>Good friends.</span></span><span class="line"><span>Great games.</span></span></h1><p>Your next game starts here. Find a turf nearby<br class="desktop-break"> and make time for your team.</p><a class="hero-link" href="#search-form">Find your next pitch ${icon("arrow-down")}</a></div><div class="hero-caption"><span id="hero-place">${PHOTOS[HERO[0]].place}</span>${credit(PHOTOS[HERO[0]]).replace("<a ", '<a id="hero-credit" ')}</div><div class="hero-dots">${HERO.map((k, i) => `<button type="button" aria-label="Show ${esc(PHOTOS[k].place)}" aria-current="${!i}"></button>`).join("")}</div><div class="hero-roll" aria-hidden="true">${ball()}</div></section><section class="search-section" aria-label="Find a turf"><form id="search-form" class="search-grid"><label class="field"><span>Turf or town</span><div class="input-icon">${icon("search")}<input name="q" id="search-query" placeholder="Where are you playing?" value="${esc(s.q)}"></div></label><label class="field"><span>District</span><select name="district">${options(state.config.districts, s.district, "All Kerala districts")}</select></label>${field("Game date", "date", s.date, `type="date" min="${state.config.today}" required`)}<button class="primary">${icon("search")}Find a turf</button></form><div class="search-secondary"><button class="quiet" id="near-me">${icon("locate-fixed")}Use my location</button><button class="quiet" id="town-search">${icon("map-pin")}Search a locality</button><label class="check-label"><input type="checkbox" id="available-only" ${s.available ? "checked" : ""}>Available slots only</label>${state.location ? `<span class="location-chip">${icon("navigation")}${esc(state.location.name)}<button class="icon-button" id="clear-location" title="Clear location" aria-label="Clear location">${icon("x")}</button></span>` : ""}</div><div id="location-message" role="status"></div></section>${ticker()}<div class="section-heading discovery-heading"><div><h2>${s.district ? `Turfs in ${esc(s.district)}` : state.location ? "Turfs near you" : "Find your home ground"}</h2><p id="result-count">Checking available pitches...</p><span id="listing-status" class="small muted" role="status"></span></div><div class="segmented" aria-label="Team size">${[
+    `<section class="intro" aria-label="Football in Malappuram"><div class="hero-slides" aria-hidden="true">${HERO.map((k, i) => `<img class="hero-slide${i ? "" : " active"}" data-photo="${k}" src="/media/${PHOTOS[k].file}" alt="" ${i ? 'loading="lazy"' : 'fetchpriority="high"'}>`).join("")}</div><div class="floodlight" aria-hidden="true"></div>${pitchLines}<a class="hero-map" href="/grounds" aria-label="Explore ${GROUNDS.length} real grounds on the Kerala map">${keralaMap({ cls: "hero", label: false })}<span class="hero-map-label"><strong data-count="${GROUNDS.length}">${GROUNDS.length}</strong>real grounds in ${districtCount} districts</span></a><div class="intro-content"><div class="hero-location">${icon("map-pin")}From Malappuram, Kerala’s football heartland</div><h1><span class="line"><span>Good friends.</span></span><span class="line"><span>Great games.</span></span></h1><p>Your next game starts here. Find a turf nearby<br class="desktop-break"> and make time for your team.</p><a class="hero-link" href="#search-form">Find your next pitch ${icon("arrow-down")}</a></div><div class="hero-caption"><span id="hero-place">${PHOTOS[HERO[0]].place}</span>${credit(PHOTOS[HERO[0]]).replace("<a ", '<a id="hero-credit" ')}</div><div class="hero-dots">${HERO.map((k, i) => `<button type="button" aria-label="Show ${esc(PHOTOS[k].place)}" aria-current="${!i}"></button>`).join("")}</div><div class="hero-roll" aria-hidden="true">${ball()}</div></section><section class="search-section" aria-label="Find a turf"><form id="search-form" class="search-grid"><label class="field"><span>Turf or town</span><div class="input-icon">${icon("search")}<input name="q" id="search-query" placeholder="Where are you playing?" value="${esc(s.q)}"></div></label><label class="field"><span>District</span><select name="district">${options(state.config.districts, s.district, "All Kerala districts")}</select></label>${field("Game date", "date", s.date, `type="date" min="${state.config.today}" required`)}<button class="primary">${icon("search")}Find a turf</button></form><div class="search-secondary"><button class="quiet" id="near-me">${icon("locate-fixed")}Use my location</button><button class="quiet" id="town-search">${icon("map-pin")}Search a locality</button><label class="check-label"><input type="checkbox" id="available-only" ${s.available ? "checked" : ""}>Available slots only</label>${state.location ? `<span class="location-chip">${icon("navigation")}${esc(state.location.name)}<button class="icon-button" id="clear-location" title="Clear location" aria-label="Clear location">${icon("x")}</button></span>` : ""}</div><div id="location-message" role="status"></div></section>${ticker()}<div class="section-heading discovery-heading"><div><h2>${s.district ? `Turfs in ${esc(s.district)}` : state.location ? "Turfs near you" : "Find your home ground"}</h2><p id="result-count">Checking available pitches...</p><span id="listing-status" class="small muted" role="status"></span></div><div class="segmented" aria-label="Team size">${[
       ["", "All turfs"],
       ["5", "5-a-side"],
       ["7", "7-a-side"],
@@ -255,7 +257,7 @@ async function discovery(version) {
       )
       .join(
         "",
-      )}</div></div><div class="discovery-body"><section id="results" aria-live="polite"><div class="loading">Finding turfs...</div></section><aside class="sidebar"><div class="district-heading">${icon("map-pin")}<h3>Where’s your game?</h3></div><p class="small muted">Find a ground in your district.</p><div class="district-list">${state.config.districts.map((d) => `<button data-district="${d}" class="${s.district === d ? "active" : ""}">${d}${icon("chevron-right")}</button>`).join("")}</div></aside></div>${story()}${contactBand()}`;
+      )}</div></div><div class="discovery-body"><section id="results" aria-live="polite"><div class="loading">Finding turfs...</div></section><aside class="sidebar"><div class="district-heading">${icon("map-pin")}<h3>Where’s your game?</h3></div><p class="small muted">Find a ground in your district.</p><div class="district-list">${state.config.districts.map((d) => `<button data-district="${d}" class="${s.district === d ? "active" : ""}">${d}${icon("chevron-right")}</button>`).join("")}</div></aside></div>${groundsTeaser(s.district)}${story()}${contactBand()}`;
   heroSlides();
   $$("[data-town]").forEach(
     (b) =>
@@ -320,19 +322,26 @@ async function discovery(version) {
       lastResult = signature;
       $("#result-count").textContent =
         `${data.turfs.length} ${data.turfs.length === 1 ? "turf" : "turfs"} · ${dateLabel(s.date)}`;
+      const fallback = data.turfs.length
+        ? ""
+        : groundsFallback({ district: s.district, q: s.q, near: state.location?.coordinates });
       $("#results").innerHTML = data.turfs.length
         ? `<div class="turf-grid">${data.turfs.map((t) => `<article class="turf-card"><a href="/turfs/${t.id}?date=${s.date}" class="turf-photo" aria-label="View ${esc(t.name)}">${t.coverImageId ? `<img src="/api/images/${t.coverImageId}" alt="${esc(t.name)}" loading="lazy">` : `<div class="pitch-placeholder" aria-hidden="true"><span class="pitch-center"></span></div><span class="photo-pending">Photos coming soon</span>`}<span class="photo-badge">${t.formats.map((n) => n + "-a-side").join(" / ")}</span></a><div class="turf-content"><h3><a href="/turfs/${t.id}?date=${s.date}">${esc(t.name)}</a></h3><div class="location">${icon("map-pin")}${esc(t.town)}, ${esc(t.district)}${t.distance !== undefined ? ` · ${t.distance.toFixed(1)} km` : ""}</div><div class="tags"><span class="tag">${esc(t.surface)}</span>${t.formats.map((n) => `<span class="tag">${n * 2} players</span>`).join("")}</div><div class="card-bottom"><div><div class="price">${money(t.price)} <small>/ ${t.slotDuration} min</small></div><span class="availability">${t.openSlots ? t.openSlots + " open slots" : "No open slots on this date"}</span></div><a class="outline" href="/turfs/${t.id}?date=${s.date}">View slots ${icon("arrow-up-right")}</a></div></div></article>`).join("")}</div>`
         : empty(
             state.location
-              ? "No turfs within 50 km"
-              : s.district || s.q || s.format || s.available
-                ? "No pitches match this search"
-                : "The next kick-off is coming.",
-            s.district || s.q || s.format || s.available || state.location
-              ? "Try another district, date, or team size to find your next game."
-              : "New grounds will appear here as they join. Check back soon to find your next game.",
+              ? "No bookable turfs within 50 km yet"
+              : s.district && fallback
+                ? `No bookable turfs in ${s.district} yet`
+                : s.district || s.q || s.format || s.available
+                  ? "No pitches match this search"
+                  : "The next kick-off is coming.",
+            fallback
+              ? "TurfKerala is still signing up venues here. Meanwhile, these real grounds are nearby."
+              : s.district || s.q || s.format || s.available || state.location
+                ? "Try another district, date, or team size to find your next game."
+                : "New grounds will appear here as they join. Check back soon to find your next game.",
             `<button id="clear-filters" class="outline">${icon("refresh-cw")}Explore all Kerala</button>`,
-          );
+          ) + fallback;
       $("#clear-filters")?.addEventListener("click", () => {
         Object.assign(s, { q: "", district: "", format: "", available: false });
         state.location = null;

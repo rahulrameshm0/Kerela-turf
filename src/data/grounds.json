@@ -1,0 +1,1257 @@
+{
+ "source": "© OpenStreetMap contributors (ODbL)",
+ "fetched": "2026-11-02",
+ "grounds": [
+  {
+   "id": "w1085934763",
+   "name": "Azteca Turfs",
+   "district": "Alappuzha",
+   "town": "Cherthala",
+   "surface": "",
+   "lat": 9.65432,
+   "lng": 76.33934
+  },
+  {
+   "id": "w1263147903",
+   "name": "Cabinet turf",
+   "district": "Alappuzha",
+   "town": "Vellakinar",
+   "surface": "",
+   "lat": 9.48416,
+   "lng": 76.33669
+  },
+  {
+   "id": "w1234993199",
+   "name": "DERBY04",
+   "district": "Alappuzha",
+   "town": "Varanad",
+   "surface": "Artificial turf",
+   "lat": 9.72312,
+   "lng": 76.36037
+  },
+  {
+   "id": "w934728953",
+   "name": "Free Kick-Golden Turf",
+   "district": "Alappuzha",
+   "town": "Cherthala",
+   "surface": "Artificial turf",
+   "lat": 9.6968,
+   "lng": 76.32093
+  },
+  {
+   "id": "w1342666483",
+   "name": "Georgian Olympian Sports Centre",
+   "district": "Alappuzha",
+   "town": "Thakazhy",
+   "surface": "Artificial turf",
+   "lat": 9.36848,
+   "lng": 76.4308
+  },
+  {
+   "id": "w1232528604",
+   "name": "Old Trafford Turf",
+   "district": "Alappuzha",
+   "town": "Thyckal",
+   "surface": "Artificial turf",
+   "lat": 9.68784,
+   "lng": 76.30969
+  },
+  {
+   "id": "w1537731072",
+   "name": "School Turf",
+   "district": "Alappuzha",
+   "town": "Mannancherry",
+   "surface": "Natural grass",
+   "lat": 9.57504,
+   "lng": 76.34905
+  },
+  {
+   "id": "w899684679",
+   "name": "SOCCER SPORTS CLUB PLAY GROUND",
+   "district": "Alappuzha",
+   "town": "Neeretupuram",
+   "surface": "Natural grass",
+   "lat": 9.36647,
+   "lng": 76.52237
+  },
+  {
+   "id": "w1222927564",
+   "name": "Anfield Arena",
+   "district": "Ernakulam",
+   "town": "Kalikulangara",
+   "surface": "Artificial turf",
+   "lat": 10.14761,
+   "lng": 76.24604
+  },
+  {
+   "id": "w1322854171",
+   "name": "Arena Dreamz",
+   "district": "Ernakulam",
+   "town": "Vazhappilly",
+   "surface": "",
+   "lat": 10.01325,
+   "lng": 76.56659
+  },
+  {
+   "id": "n14008463207",
+   "name": "Assisi Football Turf",
+   "district": "Ernakulam",
+   "town": "Karukutty",
+   "surface": "Artificial turf",
+   "lat": 10.22206,
+   "lng": 76.37905
+  },
+  {
+   "id": "w1064106107",
+   "name": "Athens Football and cricket turf",
+   "district": "Ernakulam",
+   "town": "Nadakkavu",
+   "surface": "Natural grass",
+   "lat": 9.89542,
+   "lng": 76.37005
+  },
+  {
+   "id": "w956620511",
+   "name": "Campeones Arena",
+   "district": "Ernakulam",
+   "town": "Pachalam",
+   "surface": "",
+   "lat": 9.99668,
+   "lng": 76.28005
+  },
+  {
+   "id": "w966158577",
+   "name": "Club T Football Turf",
+   "district": "Ernakulam",
+   "town": "Kakkanad West",
+   "surface": "",
+   "lat": 10.00044,
+   "lng": 76.33353
+  },
+  {
+   "id": "w1223044019",
+   "name": "F12 Arena Football Turf",
+   "district": "Ernakulam",
+   "town": "Thengode",
+   "surface": "Artificial turf",
+   "lat": 10.0254,
+   "lng": 76.36979
+  },
+  {
+   "id": "w1163630819",
+   "name": "Goatclub Football Turf",
+   "district": "Ernakulam",
+   "town": "Thuruth",
+   "surface": "",
+   "lat": 10.12286,
+   "lng": 76.37819
+  },
+  {
+   "id": "w1461797196",
+   "name": "Kalikkalam Turf",
+   "district": "Ernakulam",
+   "town": "Edapally",
+   "surface": "Artificial turf",
+   "lat": 10.02659,
+   "lng": 76.3108
+  },
+  {
+   "id": "w1177326740",
+   "name": "LA Sports",
+   "district": "Ernakulam",
+   "town": "Elamkulam",
+   "surface": "Artificial turf",
+   "lat": 9.97577,
+   "lng": 76.2998
+  },
+  {
+   "id": "w1290007545",
+   "name": "Redkite Turf",
+   "district": "Ernakulam",
+   "town": "Eroor",
+   "surface": "Artificial turf",
+   "lat": 9.96947,
+   "lng": 76.332
+  },
+  {
+   "id": "w1322854649",
+   "name": "Riverside Arena",
+   "district": "Ernakulam",
+   "town": "Kochi",
+   "surface": "Artificial turf",
+   "lat": 9.94081,
+   "lng": 76.29391
+  },
+  {
+   "id": "w804251949",
+   "name": "Roar Sports 5A Side Football Turf-Edapally Cheranallur",
+   "district": "Ernakulam",
+   "town": "Edappally North",
+   "surface": "",
+   "lat": 10.05529,
+   "lng": 76.29092
+  },
+  {
+   "id": "w372947636",
+   "name": "RSC Football Pitch",
+   "district": "Ernakulam",
+   "town": "Elamkulam",
+   "surface": "Artificial turf",
+   "lat": 9.97006,
+   "lng": 76.29755
+  },
+  {
+   "id": "w1075259049",
+   "name": "Soccer 6 Football Turf",
+   "district": "Ernakulam",
+   "town": "Kakkanad West",
+   "surface": "",
+   "lat": 10.01838,
+   "lng": 76.33101
+  },
+  {
+   "id": "w961648006",
+   "name": "Soccer arena - synthetic football turf",
+   "district": "Ernakulam",
+   "town": "Nellikuzhi",
+   "surface": "",
+   "lat": 10.0768,
+   "lng": 76.59678
+  },
+  {
+   "id": "w1223042567",
+   "name": "Span-New Sports Academy Football(Soccer) Turf",
+   "district": "Ernakulam",
+   "town": "Kalikulangara",
+   "surface": "Artificial turf",
+   "lat": 10.14392,
+   "lng": 76.24072
+  },
+  {
+   "id": "w1322854902",
+   "name": "Sport On Football Turf",
+   "district": "Ernakulam",
+   "town": "Thottakkattukara",
+   "surface": "",
+   "lat": 10.1116,
+   "lng": 76.34892
+  },
+  {
+   "id": "w363022433",
+   "name": "St Alberts College Ground",
+   "district": "Ernakulam",
+   "town": "Friendship Nagar",
+   "surface": "Artificial turf",
+   "lat": 9.9992,
+   "lng": 76.29923
+  },
+  {
+   "id": "w1322854750",
+   "name": "United Kochi Soccer Arena",
+   "district": "Ernakulam",
+   "town": "Valummel",
+   "surface": "",
+   "lat": 9.9261,
+   "lng": 76.26293
+  },
+  {
+   "id": "w910594651",
+   "name": "United Sports Centre - Football Turf",
+   "district": "Ernakulam",
+   "town": "Edachira",
+   "surface": "Artificial turf",
+   "lat": 10.00408,
+   "lng": 76.36019
+  },
+  {
+   "id": "w797930660",
+   "name": "Zesto",
+   "district": "Ernakulam",
+   "town": "Elamkulam",
+   "surface": "Artificial turf",
+   "lat": 9.97173,
+   "lng": 76.29849
+  },
+  {
+   "id": "w975355148",
+   "name": "പ്രോജക്ട് 19",
+   "district": "Ernakulam",
+   "town": "വാഴപ്പിള്ളി, മുവാറ്റുപുഴ",
+   "surface": "Artificial turf",
+   "lat": 9.99294,
+   "lng": 76.57299
+  },
+  {
+   "id": "w1001792015",
+   "name": "ATS Arena (Turf)",
+   "district": "Idukki",
+   "town": "Idukki Kavala",
+   "surface": "",
+   "lat": 9.75132,
+   "lng": 77.11815
+  },
+  {
+   "id": "w849090195",
+   "name": "Anfield Arena Turf",
+   "district": "Kannur",
+   "town": "Padiyottuchal",
+   "surface": "",
+   "lat": 12.25566,
+   "lng": 75.3433
+  },
+  {
+   "id": "w1154051308",
+   "name": "FA Arena",
+   "district": "Kannur",
+   "town": "Elayavoor",
+   "surface": "",
+   "lat": 11.89258,
+   "lng": 75.38642
+  },
+  {
+   "id": "w958507752",
+   "name": "Infield Football Turf",
+   "district": "Kannur",
+   "town": "Thalassery",
+   "surface": "",
+   "lat": 11.75926,
+   "lng": 75.488
+  },
+  {
+   "id": "w951648450",
+   "name": "legends sports",
+   "district": "Kannur",
+   "town": "Thottada",
+   "surface": "Artificial turf",
+   "lat": 11.83986,
+   "lng": 75.41976
+  },
+  {
+   "id": "w799328488",
+   "name": "NP 7 Hevens Club",
+   "district": "Kannur",
+   "town": "Thottada",
+   "surface": "Artificial turf",
+   "lat": 11.84885,
+   "lng": 75.40643
+  },
+  {
+   "id": "w1324114927",
+   "name": "qaboos arena",
+   "district": "Kannur",
+   "town": "Panakad",
+   "surface": "Artificial turf",
+   "lat": 12.03973,
+   "lng": 75.42542
+  },
+  {
+   "id": "w1324115298",
+   "name": "Strikefield sports arena, new mahe",
+   "district": "Kannur",
+   "town": "Punnol",
+   "surface": "Natural grass",
+   "lat": 11.70639,
+   "lng": 75.53254
+  },
+  {
+   "id": "w1324115262",
+   "name": "Tiki Taka Football/Cricket Turf Kannur",
+   "district": "Kannur",
+   "town": "Elayavoor",
+   "surface": "",
+   "lat": 11.89291,
+   "lng": 75.40548
+  },
+  {
+   "id": "w1566714527",
+   "name": "Tiki Taka Turf",
+   "district": "Kannur",
+   "town": "Poovam",
+   "surface": "",
+   "lat": 11.98839,
+   "lng": 75.58574
+  },
+  {
+   "id": "w1101537191",
+   "name": "TNM Sports Hub, Kolachery",
+   "district": "Kannur",
+   "town": "Karinkalkuzhi",
+   "surface": "",
+   "lat": 11.98488,
+   "lng": 75.41741
+  },
+  {
+   "id": "w1153978318",
+   "name": "TNM Turf",
+   "district": "Kannur",
+   "town": "Pallikunnu",
+   "surface": "",
+   "lat": 11.88243,
+   "lng": 75.34369
+  },
+  {
+   "id": "w1099879251",
+   "name": "Win arena turf",
+   "district": "Kannur",
+   "town": "Thalassery",
+   "surface": "",
+   "lat": 11.76625,
+   "lng": 75.51231
+  },
+  {
+   "id": "w801879241",
+   "name": "Private Football Pratice Ground",
+   "district": "Kasaragod",
+   "town": "Kottachery",
+   "surface": "Artificial turf",
+   "lat": 12.32048,
+   "lng": 75.08971
+  },
+  {
+   "id": "w1065582520",
+   "name": "sports city",
+   "district": "Kasaragod",
+   "town": "Pallikere",
+   "surface": "",
+   "lat": 12.39635,
+   "lng": 75.04843
+  },
+  {
+   "id": "w1062128682",
+   "name": "D10 Sports Hub",
+   "district": "Kollam",
+   "town": "Thodiyoor",
+   "surface": "",
+   "lat": 9.03965,
+   "lng": 76.55537
+  },
+  {
+   "id": "w978401924",
+   "name": "Dethan's Multi Sports Football Turf",
+   "district": "Kollam",
+   "town": "Karikode",
+   "surface": "",
+   "lat": 8.9171,
+   "lng": 76.64017
+  },
+  {
+   "id": "w1064068026",
+   "name": "Goals football turf",
+   "district": "Kollam",
+   "town": "Vellanathuruthu",
+   "surface": "",
+   "lat": 9.02873,
+   "lng": 76.54242
+  },
+  {
+   "id": "w1054377560",
+   "name": "Atleto",
+   "district": "Kottayam",
+   "town": "Kanjikuzhy Junction",
+   "surface": "Artificial turf",
+   "lat": 9.59512,
+   "lng": 76.54368
+  },
+  {
+   "id": "w1101972426",
+   "name": "Boot It Turf",
+   "district": "Kottayam",
+   "town": "Poonjar",
+   "surface": "",
+   "lat": 9.67967,
+   "lng": 76.78859
+  },
+  {
+   "id": "w1138279070",
+   "name": "Club 07 Football Turf",
+   "district": "Kottayam",
+   "town": "Mariyidom",
+   "surface": "",
+   "lat": 9.70069,
+   "lng": 76.62516
+  },
+  {
+   "id": "w1130681329",
+   "name": "Club 35 Turf, Kottaramattom, Pala",
+   "district": "Kottayam",
+   "town": "Nelliyani",
+   "surface": "",
+   "lat": 9.71362,
+   "lng": 76.66374
+  },
+  {
+   "id": "w1138010890",
+   "name": "Old Trafford Turf",
+   "district": "Kottayam",
+   "town": "Kozha",
+   "surface": "",
+   "lat": 9.75344,
+   "lng": 76.56985
+  },
+  {
+   "id": "w1052987781",
+   "name": "Phoenix Arena",
+   "district": "Kottayam",
+   "town": "Areekara",
+   "surface": "",
+   "lat": 9.79898,
+   "lng": 76.6123
+  },
+  {
+   "id": "w1185768153",
+   "name": "SAP - Sports Arena Pala",
+   "district": "Kottayam",
+   "town": "Kottaramattom",
+   "surface": "",
+   "lat": 9.69904,
+   "lng": 76.67191
+  },
+  {
+   "id": "w1489314284",
+   "name": "Sporthood Highrange Sports Arena",
+   "district": "Kottayam",
+   "town": "Kanjirappally",
+   "surface": "Artificial turf",
+   "lat": 9.56183,
+   "lng": 76.7872
+  },
+  {
+   "id": "w1101960774",
+   "name": "Sportigo Sports City",
+   "district": "Kottayam",
+   "town": "Erattupetta",
+   "surface": "",
+   "lat": 9.69383,
+   "lng": 76.7888
+  },
+  {
+   "id": "w1169334867",
+   "name": "United Soccer Club Changanacherry",
+   "district": "Kottayam",
+   "town": "Kodinattumkunnu",
+   "surface": "Artificial turf",
+   "lat": 9.46292,
+   "lng": 76.58069
+  },
+  {
+   "id": "w984660255",
+   "name": "BRAZUCA soccer Turf",
+   "district": "Kozhikode",
+   "town": "Thiruvambady",
+   "surface": "",
+   "lat": 11.3561,
+   "lng": 76.0076
+  },
+  {
+   "id": "w967042660",
+   "name": "CR7 Football Turf",
+   "district": "Kozhikode",
+   "town": "Atholi",
+   "surface": "",
+   "lat": 11.35578,
+   "lng": 75.75811
+  },
+  {
+   "id": "n7461221302",
+   "name": "Crooners Soccer and Swimming Pool",
+   "district": "Kozhikode",
+   "town": "Pantheerankave",
+   "surface": "",
+   "lat": 11.23928,
+   "lng": 75.84104
+  },
+  {
+   "id": "w1284531263",
+   "name": "F10 Football Turf",
+   "district": "Kozhikode",
+   "town": "Purakkattery",
+   "surface": "",
+   "lat": 11.33846,
+   "lng": 75.76005
+  },
+  {
+   "id": "w960141712",
+   "name": "Fifa Club, Indoor soccer field",
+   "district": "Kozhikode",
+   "town": "Feroke",
+   "surface": "",
+   "lat": 11.16988,
+   "lng": 75.84155
+  },
+  {
+   "id": "w1324116015",
+   "name": "Football turf Mini Stadium",
+   "district": "Kozhikode",
+   "town": "Perumanna",
+   "surface": "",
+   "lat": 11.24376,
+   "lng": 75.88943
+  },
+  {
+   "id": "w798844428",
+   "name": "Ginga - Football Turf",
+   "district": "Kozhikode",
+   "town": "Karaparamba",
+   "surface": "",
+   "lat": 11.28887,
+   "lng": 75.78577
+  },
+  {
+   "id": "w797764929",
+   "name": "Laliga Soccer",
+   "district": "Kozhikode",
+   "town": "Kozhikode",
+   "surface": "Artificial turf",
+   "lat": 11.25726,
+   "lng": 75.82308
+  },
+  {
+   "id": "w1028993080",
+   "name": "River Soccer",
+   "district": "Kozhikode",
+   "town": "Atholi",
+   "surface": "",
+   "lat": 11.34194,
+   "lng": 75.76116
+  },
+  {
+   "id": "w1324116016",
+   "name": "Sastha Football Turf",
+   "district": "Kozhikode",
+   "town": "Perumanna",
+   "surface": "",
+   "lat": 11.24337,
+   "lng": 75.88957
+  },
+  {
+   "id": "w1396597942",
+   "name": "Sports City Turf",
+   "district": "Kozhikode",
+   "town": "Kadiyangad",
+   "surface": "Artificial turf",
+   "lat": 11.60896,
+   "lng": 75.76219
+  },
+  {
+   "id": "w940018678",
+   "name": "Sussex cricket academy and sports arena",
+   "district": "Kozhikode",
+   "town": "Karaparamba",
+   "surface": "",
+   "lat": 11.28664,
+   "lng": 75.78232
+  },
+  {
+   "id": "w954968957",
+   "name": "Abraj sports center",
+   "district": "Malappuram",
+   "town": "Edarikkod",
+   "surface": "",
+   "lat": 11.01667,
+   "lng": 75.97587
+  },
+  {
+   "id": "w982383230",
+   "name": "Al Maidan Football Turf",
+   "district": "Malappuram",
+   "town": "New Bazar",
+   "surface": "",
+   "lat": 11.10601,
+   "lng": 76.05326
+  },
+  {
+   "id": "w1073470073",
+   "name": "Anfield Arena Football Turf",
+   "district": "Malappuram",
+   "town": "Kavanoor",
+   "surface": "",
+   "lat": 11.18607,
+   "lng": 76.06498
+  },
+  {
+   "id": "w1324117385",
+   "name": "aspire city football turf",
+   "district": "Malappuram",
+   "town": "Angadipuram",
+   "surface": "",
+   "lat": 10.97666,
+   "lng": 76.2025
+  },
+  {
+   "id": "w933562394",
+   "name": "Atlantis Football Arena, Hilltop",
+   "district": "Malappuram",
+   "town": "Mongam",
+   "surface": "",
+   "lat": 11.13573,
+   "lng": 76.02695
+  },
+  {
+   "id": "w982383232",
+   "name": "B Circle Football Turf",
+   "district": "Malappuram",
+   "town": "Half Valluvambram",
+   "surface": "",
+   "lat": 11.13138,
+   "lng": 76.04363
+  },
+  {
+   "id": "w803587734",
+   "name": "Beauchamp Football Arena Areekode",
+   "district": "Malappuram",
+   "town": "Areekode",
+   "surface": "",
+   "lat": 11.24313,
+   "lng": 76.04564
+  },
+  {
+   "id": "w371923614",
+   "name": "Club One football turf",
+   "district": "Malappuram",
+   "town": "Civil Station",
+   "surface": "Artificial turf",
+   "lat": 11.04488,
+   "lng": 76.07603
+  },
+  {
+   "id": "w845820577",
+   "name": "Crown Football Turf",
+   "district": "Malappuram",
+   "town": "Kavanoor",
+   "surface": "",
+   "lat": 11.17021,
+   "lng": 76.07716
+  },
+  {
+   "id": "w982383233",
+   "name": "Football Turf,Cheenikkal",
+   "district": "Malappuram",
+   "town": "New Bazar",
+   "surface": "",
+   "lat": 11.10973,
+   "lng": 76.05279
+  },
+  {
+   "id": "n8566450107",
+   "name": "FUT OUT Football Turf",
+   "district": "Malappuram",
+   "town": "Makkaraparambu",
+   "surface": "",
+   "lat": 11.00691,
+   "lng": 76.12675
+  },
+  {
+   "id": "w1324035060",
+   "name": "Futsal Sports Floor",
+   "district": "Malappuram",
+   "town": "Idimuzhikkal",
+   "surface": "",
+   "lat": 11.17038,
+   "lng": 75.86559
+  },
+  {
+   "id": "w1202744883",
+   "name": "Goal Point Turf",
+   "district": "Malappuram",
+   "town": "Nooradi",
+   "surface": "",
+   "lat": 11.01597,
+   "lng": 76.0809
+  },
+  {
+   "id": "w1064753728",
+   "name": "Goal Turf",
+   "district": "Malappuram",
+   "town": "Santhi Nagar",
+   "surface": "",
+   "lat": 11.22205,
+   "lng": 76.26459
+  },
+  {
+   "id": "w958199405",
+   "name": "Golfit Premium Football Turf",
+   "district": "Malappuram",
+   "town": "Morayur",
+   "surface": "Artificial turf",
+   "lat": 11.17433,
+   "lng": 76.00263
+  },
+  {
+   "id": "w972163722",
+   "name": "Gravit Anfield Truf, Kalikavu",
+   "district": "Malappuram",
+   "town": "Kalikavu",
+   "surface": "Artificial turf",
+   "lat": 11.17015,
+   "lng": 76.3191
+  },
+  {
+   "id": "w982220983",
+   "name": "green field turf",
+   "district": "Malappuram",
+   "town": "Thazhekkode",
+   "surface": "",
+   "lat": 10.95672,
+   "lng": 76.30242
+  },
+  {
+   "id": "w956111240",
+   "name": "Jhinga Football Turf Edakkara",
+   "district": "Malappuram",
+   "town": "Edakkara",
+   "surface": "",
+   "lat": 11.35937,
+   "lng": 76.30995
+  },
+  {
+   "id": "w719465527",
+   "name": "Lagana Football Turf",
+   "district": "Malappuram",
+   "town": "Puthalam",
+   "surface": "",
+   "lat": 11.23057,
+   "lng": 76.05372
+  },
+  {
+   "id": "w1065761411",
+   "name": "Lakana Football Turf",
+   "district": "Malappuram",
+   "town": "Perinthalmanna",
+   "surface": "Artificial turf",
+   "lat": 10.99754,
+   "lng": 76.23601
+  },
+  {
+   "id": "n9779121322",
+   "name": "Match Box Turf",
+   "district": "Malappuram",
+   "town": "Wandoor",
+   "surface": "",
+   "lat": 11.19246,
+   "lng": 76.24589
+  },
+  {
+   "id": "w1335582035",
+   "name": "Munnas Sports Park",
+   "district": "Malappuram",
+   "town": "Valanchery",
+   "surface": "Natural grass",
+   "lat": 10.87897,
+   "lng": 76.10066
+  },
+  {
+   "id": "w1386517495",
+   "name": "Oakland Sports Arena",
+   "district": "Malappuram",
+   "town": "Kuttippuram",
+   "surface": "",
+   "lat": 10.87513,
+   "lng": 76.04671
+  },
+  {
+   "id": "w1225838059",
+   "name": "Pattakka International Turf Karekkad",
+   "district": "Malappuram",
+   "town": "Tirur",
+   "surface": "",
+   "lat": 10.9413,
+   "lng": 76.0829
+  },
+  {
+   "id": "w982383229",
+   "name": "Pilakkal Turf",
+   "district": "Malappuram",
+   "town": "Downhill",
+   "surface": "",
+   "lat": 11.09199,
+   "lng": 76.06557
+  },
+  {
+   "id": "w967604613",
+   "name": "Puskas Sports Hub",
+   "district": "Malappuram",
+   "town": "Ponnani",
+   "surface": "Artificial turf",
+   "lat": 10.7513,
+   "lng": 76.02211
+  },
+  {
+   "id": "w895419924",
+   "name": "Sevens Football Turf Kurukathani",
+   "district": "Malappuram",
+   "town": "Kadungathukundu",
+   "surface": "",
+   "lat": 10.97072,
+   "lng": 75.97912
+  },
+  {
+   "id": "w954978229",
+   "name": "Sevens international turf court",
+   "district": "Malappuram",
+   "town": "PARINGIMOOCHIKKAL",
+   "surface": "",
+   "lat": 10.99118,
+   "lng": 76.04666
+  },
+  {
+   "id": "w958467239",
+   "name": "Soccer Field, Morayur",
+   "district": "Malappuram",
+   "town": "Morayur",
+   "surface": "",
+   "lat": 11.13534,
+   "lng": 76.01629
+  },
+  {
+   "id": "w961065015",
+   "name": "Soccer Greens",
+   "district": "Malappuram",
+   "town": "Nilambur",
+   "surface": "Natural grass",
+   "lat": 11.26905,
+   "lng": 76.21246
+  },
+  {
+   "id": "w1112682255",
+   "name": "Soccer zone turf",
+   "district": "Malappuram",
+   "town": "Akambadam",
+   "surface": "",
+   "lat": 11.31422,
+   "lng": 76.20749
+  },
+  {
+   "id": "w1324116872",
+   "name": "Soccerzone turf",
+   "district": "Malappuram",
+   "town": "Edavannappara",
+   "surface": "",
+   "lat": 11.23804,
+   "lng": 76.01119
+  },
+  {
+   "id": "w1226465320",
+   "name": "Sports Zilla Football Arena, Parappur, Kadampuzha",
+   "district": "Malappuram",
+   "town": "Kadampuzha",
+   "surface": "Natural grass",
+   "lat": 10.955,
+   "lng": 76.05658
+  },
+  {
+   "id": "w886959568",
+   "name": "Strikers Football Turf",
+   "district": "Malappuram",
+   "town": "Valiyangadi",
+   "surface": "",
+   "lat": 11.06051,
+   "lng": 76.00604
+  },
+  {
+   "id": "w824599408",
+   "name": "yacca sports city",
+   "district": "Malappuram",
+   "town": "Vellachal",
+   "surface": "",
+   "lat": 10.96266,
+   "lng": 75.92724
+  },
+  {
+   "id": "w1324117553",
+   "name": "zyco turf karinkallathani",
+   "district": "Malappuram",
+   "town": "Karinkallathani",
+   "surface": "",
+   "lat": 10.95859,
+   "lng": 76.32028
+  },
+  {
+   "id": "w958168164",
+   "name": "Amigos football arena",
+   "district": "Palakkad",
+   "town": "Old Lakkidi",
+   "surface": "",
+   "lat": 10.77983,
+   "lng": 76.46013
+  },
+  {
+   "id": "w958107027",
+   "name": "Cherpulassery Turf",
+   "district": "Palakkad",
+   "town": "Cherpulassery",
+   "surface": "",
+   "lat": 10.87741,
+   "lng": 76.31055
+  },
+  {
+   "id": "w958108137",
+   "name": "Cherpulassery Turf",
+   "district": "Palakkad",
+   "town": "Cherpulassery",
+   "surface": "",
+   "lat": 10.88703,
+   "lng": 76.31271
+  },
+  {
+   "id": "w1324117581",
+   "name": "Club Arena Football Turf",
+   "district": "Palakkad",
+   "town": "Kumaramputhur",
+   "surface": "",
+   "lat": 10.98204,
+   "lng": 76.45087
+  },
+  {
+   "id": "w1223824571",
+   "name": "Db7 Football Arena",
+   "district": "Palakkad",
+   "town": "Chalissery",
+   "surface": "Artificial turf",
+   "lat": 10.73675,
+   "lng": 76.09276
+  },
+  {
+   "id": "w1223824225",
+   "name": "Gameon Football Turf Chalissery",
+   "district": "Palakkad",
+   "town": "Koottanad",
+   "surface": "",
+   "lat": 10.74295,
+   "lng": 76.0979
+  },
+  {
+   "id": "w1223825779",
+   "name": "Green Garden Football Turf",
+   "district": "Palakkad",
+   "town": "Koottanad",
+   "surface": "",
+   "lat": 10.75758,
+   "lng": 76.11545
+  },
+  {
+   "id": "w1283593955",
+   "name": "Wembley Sports Arena",
+   "district": "Pathanamthitta",
+   "town": "Nellimoottilpadi",
+   "surface": "Artificial turf",
+   "lat": 9.16161,
+   "lng": 76.71363
+  },
+  {
+   "id": "n10995036566",
+   "name": "AJ Sports Club",
+   "district": "Thiruvananthapuram",
+   "town": "Kanjiramkulam",
+   "surface": "Artificial turf",
+   "lat": 8.3656,
+   "lng": 77.05124
+  },
+  {
+   "id": "w798106990",
+   "name": "Club House Futsal Ground",
+   "district": "Thiruvananthapuram",
+   "town": "Kazhakkoottam",
+   "surface": "",
+   "lat": 8.56072,
+   "lng": 76.87656
+  },
+  {
+   "id": "w1201503762",
+   "name": "Criballton Sports Turf",
+   "district": "Thiruvananthapuram",
+   "town": "Pothencode",
+   "surface": "",
+   "lat": 8.62332,
+   "lng": 76.89973
+  },
+  {
+   "id": "w906522250",
+   "name": "Dribble Arena Sports Hub",
+   "district": "Thiruvananthapuram",
+   "town": "Neyyatinkara",
+   "surface": "",
+   "lat": 8.40833,
+   "lng": 77.06574
+  },
+  {
+   "id": "w1433963399",
+   "name": "Kaduvayil Sports Arena",
+   "district": "Thiruvananthapuram",
+   "town": "Kallambalam",
+   "surface": "Artificial turf",
+   "lat": 8.74929,
+   "lng": 76.8097
+  },
+  {
+   "id": "w1128309934",
+   "name": "Kalikkalam Football Turf",
+   "district": "Thiruvananthapuram",
+   "town": "Kulathoor",
+   "surface": "Natural grass",
+   "lat": 8.53352,
+   "lng": 76.88063
+  },
+  {
+   "id": "w826999175",
+   "name": "Mamom Football Turf",
+   "district": "Thiruvananthapuram",
+   "town": "Attingal",
+   "surface": "",
+   "lat": 8.67779,
+   "lng": 76.82781
+  },
+  {
+   "id": "w1409255905",
+   "name": "Nirmo Lawns",
+   "district": "Thiruvananthapuram",
+   "town": "Kochuveli",
+   "surface": "Artificial turf",
+   "lat": 8.50818,
+   "lng": 76.90054
+  },
+  {
+   "id": "w1323097137",
+   "name": "Old Football Court American football field",
+   "district": "Thiruvananthapuram",
+   "town": "Karakonam",
+   "surface": "",
+   "lat": 8.39438,
+   "lng": 77.17455
+  },
+  {
+   "id": "w1426823506",
+   "name": "Spirit of 10's",
+   "district": "Thiruvananthapuram",
+   "town": "Varkala",
+   "surface": "Artificial turf",
+   "lat": 8.74196,
+   "lng": 76.75571
+  },
+  {
+   "id": "w1427924609",
+   "name": "SPORT ON ( Sports Arena for Cricket and Football)",
+   "district": "Thiruvananthapuram",
+   "town": "Varkala",
+   "surface": "Artificial turf",
+   "lat": 8.72956,
+   "lng": 76.74079
+  },
+  {
+   "id": "w1426892956",
+   "name": "Sporting Star Soccer Ground",
+   "district": "Thiruvananthapuram",
+   "town": "Edava",
+   "surface": "Natural grass",
+   "lat": 8.75898,
+   "lng": 76.69638
+  },
+  {
+   "id": "w962581275",
+   "name": "Camp nou Turf",
+   "district": "Thrissur",
+   "town": "Eravimangalam",
+   "surface": "Natural grass",
+   "lat": 10.50762,
+   "lng": 76.26956
+  },
+  {
+   "id": "w1308529291",
+   "name": "Camp Nou Turf",
+   "district": "Thrissur",
+   "town": "Olarikkara, Thrissur",
+   "surface": "",
+   "lat": 10.51423,
+   "lng": 76.17968
+  },
+  {
+   "id": "w964469823",
+   "name": "Cheruthuruthy  Football  Turf",
+   "district": "Thrissur",
+   "town": "Cheruthuruthy",
+   "surface": "",
+   "lat": 10.74224,
+   "lng": 76.27535
+  },
+  {
+   "id": "w1324117950",
+   "name": "DENFIELD FOOTBALL TURF",
+   "district": "Thrissur",
+   "town": "Irinjalakuda",
+   "surface": "",
+   "lat": 10.3606,
+   "lng": 76.21831
+  },
+  {
+   "id": "w975589620",
+   "name": "Garron Play Arena",
+   "district": "Thrissur",
+   "town": "Peramangalam",
+   "surface": "Artificial turf",
+   "lat": 10.58015,
+   "lng": 76.15187
+  },
+  {
+   "id": "w901970910",
+   "name": "Greenfield Arena",
+   "district": "Thrissur",
+   "town": "Thiruvanchikulam",
+   "surface": "",
+   "lat": 10.21398,
+   "lng": 76.19743
+  },
+  {
+   "id": "w958506698",
+   "name": "Legends Arena",
+   "district": "Thrissur",
+   "town": "Valapad",
+   "surface": "Artificial turf",
+   "lat": 10.40289,
+   "lng": 76.11715
+  },
+  {
+   "id": "w954965255",
+   "name": "Muziris Infinity Sports Hub",
+   "district": "Thrissur",
+   "town": "Azhikode",
+   "surface": "Natural grass",
+   "lat": 10.18595,
+   "lng": 76.16204
+  },
+  {
+   "id": "w1324118024",
+   "name": "Soccer City",
+   "district": "Thrissur",
+   "town": "Aloor",
+   "surface": "Natural grass",
+   "lat": 10.361,
+   "lng": 76.29715
+  },
+  {
+   "id": "w977477080",
+   "name": "Theatre of dreams Turf,kolothumpadi",
+   "district": "Thrissur",
+   "town": "Irinjalakuda",
+   "surface": "Artificial turf",
+   "lat": 10.33104,
+   "lng": 76.21497
+  },
+  {
+   "id": "w1083843139",
+   "name": "Truff Area",
+   "district": "Thrissur",
+   "town": "Valiyaparambu",
+   "surface": "Artificial turf",
+   "lat": 10.24219,
+   "lng": 76.28393
+  },
+  {
+   "id": "w1324117951",
+   "name": "United By Football Soccer Turf",
+   "district": "Thrissur",
+   "town": "Irinjalakuda",
+   "surface": "Artificial turf",
+   "lat": 10.35962,
+   "lng": 76.21891
+  }
+ ]
+}

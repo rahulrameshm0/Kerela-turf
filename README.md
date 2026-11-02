@@ -29,6 +29,12 @@ The local `.env` contains the supplied browser configuration for `keralaturf-678
 
 The Firebase configuration file currently defines rules and emulators, not web hosting. The Node API must run alongside the built frontend; deploying only `dist/` will not provide booking functionality.
 
+## Grounds map
+
+`/grounds` shows real football venues across Kerala from OpenStreetMap, with a Kerala district map, search and directions links. These listings are for discovery only: they are bundled from `src/data/grounds.json`, are never written to Firestore and cannot be booked. Each card shows a photograph of the venue's district from Wikimedia Commons, not of the venue itself; credits are in `public/media/CREDITS.md`.
+
+Refresh the data with `node scripts/fetch-grounds.mjs` (venues; reuses saved town names and geocodes new venues at one request per second) and `node scripts/fetch-map.mjs` (district outlines), then rebuild. Keep the OpenStreetMap attribution visible wherever this data appears.
+
 ## Add turf photographs
 
 Open **Admin → Turfs → Add a turf** or edit an existing turf. In **Turf photographs**, select one or more JPG, PNG or WebP images (up to 5 MB each). New turf photos are previewed before saving; existing turf uploads start immediately. Failed uploads remain available to retry without repeating successful uploads.
