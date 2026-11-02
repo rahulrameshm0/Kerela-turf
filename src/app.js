@@ -120,9 +120,10 @@ document.addEventListener("click", (e) => {
   )
     return;
   const url = new URL(a.href, location.origin);
-  if (url.origin === location.origin && !url.hash) {
+  // Same-page #section links scroll natively; links to another page stay in the app.
+  if (url.origin === location.origin && (!url.hash || url.pathname !== location.pathname)) {
     e.preventDefault();
-    navigate(url.pathname + url.search);
+    navigate(url.pathname + url.search + url.hash);
   }
 });
 window.addEventListener("popstate", route);

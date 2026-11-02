@@ -92,7 +92,8 @@ export const byDistrict = GROUNDS.reduce((all, g) => ((all[g.district] = (all[g.
 export const districtCount = Object.keys(byDistrict).length;
 
 const { view } = map;
-const xy = (g) => [((g.lng - view.west) * view.kx * view.scale).toFixed(1), ((view.north - g.lat) * view.scale).toFixed(1)];
+export const project = (lat, lng) => [((lng - view.west) * view.kx * view.scale).toFixed(1), ((view.north - lat) * view.scale).toFixed(1)];
+const xy = (g) => project(g.lat, g.lng);
 const DOT = 3.4;
 export function keralaMap({ active = "", cls = "", label = true } = {}) {
   return `<svg class="kerala-map ${cls}" viewBox="0 0 ${map.width} ${map.height}" ${label ? `role="img" aria-label="Map of Kerala with ${GROUNDS.length} football grounds"` : 'aria-hidden="true"'}><g class="map-districts">${Object.entries(map.districts)

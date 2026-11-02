@@ -49,6 +49,8 @@ import {
   Wifi,
   GlassWater,
   ExternalLink,
+  Eye,
+  EyeOff,
 } from "lucide";
 const iconSet = {
   ArrowRight,
@@ -100,6 +102,8 @@ const iconSet = {
   Wifi,
   GlassWater,
   ExternalLink,
+  Eye,
+  EyeOff,
 };
 export const $ = (s) => document.querySelector(s);
 export const $$ = (s) => [...document.querySelectorAll(s)];
